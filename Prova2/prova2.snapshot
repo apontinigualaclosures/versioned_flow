@@ -18,7 +18,7 @@
             "groupId" : "3fc4f9d0-e248-36af-909c-02884ab4d430",
             "id" : "0545e416-9b6b-365a-a6a5-23cf2af17fae",
             "instanceIdentifier" : "3e0330dc-5a0e-1f76-94a0-34ad177d6a08",
-            "name" : "Save Files >= 50",
+            "name" : "Save Files >= 60",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -51,7 +51,7 @@
             "groupId" : "3fc4f9d0-e248-36af-909c-02884ab4d430",
             "id" : "5245afda-6043-3dca-9dd4-02992a208766",
             "instanceIdentifier" : "ba4b39f1-516e-1555-1f0e-90a6920ed1e0",
-            "name" : "Save File < 50",
+            "name" : "Save File < 60",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -319,11 +319,11 @@
           "width" : 352.0,
           "zIndex" : 0
         } ],
-        "name" : "ABC",
+        "name" : "ABCprova2",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 376.0,
-          "y" : -560.0
+          "x" : 496.0,
+          "y" : -536.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -496,7 +496,7 @@
           "identifier" : "0545e416-9b6b-365a-a6a5-23cf2af17fae",
           "instanceIdentifier" : "3e0330dc-5a0e-1f76-94a0-34ad177d6a08",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "Save Files >= 50",
+          "name" : "Save Files >= 60",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 1232.692092963757,
@@ -505,7 +505,7 @@
           "properties" : {
             "Create Missing Directories" : "true",
             "Permissions" : "777",
-            "Directory" : "${target-directory}/above50",
+            "Directory" : "${target-directory}/above60",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -852,7 +852,7 @@
           "identifier" : "5245afda-6043-3dca-9dd4-02992a208766",
           "instanceIdentifier" : "ba4b39f1-516e-1555-1f0e-90a6920ed1e0",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "Save File < 50",
+          "name" : "Save File < 60",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 1224.692092963757,
@@ -861,7 +861,7 @@
           "properties" : {
             "Create Missing Directories" : "true",
             "Permissions" : "777",
-            "Directory" : "${target-directory}/below50",
+            "Directory" : "${target-directory}/below60",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
