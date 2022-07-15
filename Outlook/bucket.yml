@@ -1,5 +1,7 @@
 flows:
   de84163d-5124-4ab7-b81c-cb71565d8c95: {ver: 2, file: SimpleFlow.snapshot, comments: '',
     author: anonymous, created: 1657875252278, flowName: SimpleFlow, flowDesc: ''}
+  d46aef76-2598-4482-84df-873d4ff57811: {ver: 1, file: FlowSimple.snapshot, comments: '',
+    author: anonymous, created: 1657875887804, flowName: FlowSimple, flowDesc: ''}
 layoutVer: 1
 bucketId: 2d9a8dd7-c6ae-42dc-badb-8e0f873b71b0
