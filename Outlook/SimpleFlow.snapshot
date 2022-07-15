@@ -925,7 +925,9 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "target-directory" : "./data"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { }
