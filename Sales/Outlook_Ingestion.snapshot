@@ -16,9 +16,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-            "id" : "a53c2523-78da-3221-8bd2-8f17db25be32",
-            "instanceIdentifier" : "0182100e-8602-112f-3358-69f8624fcf61",
-            "name" : "PutFile",
+            "id" : "78ecad25-5d50-3124-a578-0feca24de006",
+            "instanceIdentifier" : "0182101a-8602-112f-b669-e1eb37fddd38",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -71,6 +71,39 @@
             "id" : "b2dd5e7e-b4e9-34f3-b581-4501c3bfc7a1",
             "instanceIdentifier" : "113098d4-0182-1000-a0b5-6e2740f818d2",
             "name" : "ExtractEmailAttachments",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "a53c2523-78da-3221-8bd2-8f17db25be32",
+            "instanceIdentifier" : "0182100e-8602-112f-3358-69f8624fcf61",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "735c56be-52b6-32c2-b0f5-7f92c4b8f15c",
+          "instanceIdentifier" : "0182101d-8602-112f-2537-46f2a7130798",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "78ecad25-5d50-3124-a578-0feca24de006",
+            "instanceIdentifier" : "0182101a-8602-112f-b669-e1eb37fddd38",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -188,12 +221,28 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
+          "identifier" : "b43f4232-b739-370b-9c49-c0481b7e1117",
+          "instanceIdentifier" : "0182101c-8602-112f-7499-2fbd8ffa6671",
+          "label" : "Get now date and renaming\n",
+          "position" : {
+            "x" : 2856.0,
+            "y" : -864.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 280.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
           "identifier" : "d6dc064e-08d0-3f49-92db-0f5f31760d40",
           "instanceIdentifier" : "0182100c-8602-112f-b811-8a13c1a84b3a",
           "label" : "Save Data in a folder",
           "position" : {
-            "x" : 2896.0,
-            "y" : -864.0
+            "x" : 3568.0,
+            "y" : -856.0
           },
           "style" : {
             "font-size" : "20px"
@@ -222,7 +271,7 @@
           "height" : 32.0,
           "identifier" : "fdce7ef3-2510-3b44-a5a8-52f327cbfba8",
           "instanceIdentifier" : "0182100a-8602-112f-add2-8e7b13f1c77e",
-          "label" : "Change name csv with data and hour\n",
+          "label" : "Take only name file\n",
           "position" : {
             "x" : 2224.0,
             "y" : -864.0
@@ -230,7 +279,7 @@
           "style" : {
             "font-size" : "20px"
           },
-          "width" : 352.0,
+          "width" : 192.0,
           "zIndex" : 0
         }, {
           "componentType" : "LABEL",
@@ -302,17 +351,17 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "723f9391-310a-344b-aecd-654b712cde3e",
-          "instanceIdentifier" : "01821003-8602-112f-2cb0-fbcbd3f324a6",
+          "identifier" : "78ecad25-5d50-3124-a578-0feca24de006",
+          "instanceIdentifier" : "0182101a-8602-112f-b669-e1eb37fddd38",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2224.0,
-            "y" : -824.0
+            "x" : 2856.0,
+            "y" : -816.0
           },
           "properties" : {
-            "Delete Attributes Expression" : "${now():toNumber():format('dd/mm/yyyy hh:mm:ss')}-${filename}",
+            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
@@ -321,6 +370,12 @@
               "displayName" : "Delete Attributes Expression",
               "identifiesControllerService" : false,
               "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
               "sensitive" : false
             },
             "Store State" : {
@@ -345,7 +400,76 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "set state fail" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "723f9391-310a-344b-aecd-654b712cde3e",
+          "instanceIdentifier" : "01821003-8602-112f-2cb0-fbcbd3f324a6",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2224.0,
+            "y" : -824.0
+          },
+          "properties" : {
+            "filename" : "${filename:substringBeforeLast('.')}",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -466,7 +590,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -628,7 +752,7 @@
           "type" : "org.apache.nifi.processors.email.ExtractEmailHeaders",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "success", "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -647,11 +771,13 @@
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2848.0,
-            "y" : -824.0
+            "x" : 3568.0,
+            "y" : -808.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
+            "Permissions" : "777",
+            "Directory" : "./ls-target",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -707,12 +833,12 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "0 sec",
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.PutFile",
-          "yieldDuration" : "1 sec"
+          "yieldDuration" : "1 min"
         } ],
         "remoteProcessGroups" : [ ],
         "variables" : { }
