@@ -1,6 +1,4 @@
 flows:
-  de84163d-5124-4ab7-b81c-cb71565d8c95: {ver: 2, file: SimpleFlow.snapshot, comments: '',
-    author: anonymous, created: 1657875252278, flowName: SimpleFlow, flowDesc: ''}
   7b1a9d16-012e-4eee-ab7e-fca5acec6ddf: {ver: 1, file: kkkk.snapshot, comments: '',
     author: anonymous, created: 1657878739055, flowName: kkkk, flowDesc: ''}
 layoutVer: 1
