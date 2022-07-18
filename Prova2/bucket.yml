@@ -8,7 +8,5 @@ flows:
     created: 1658144427271
     flowName: sda
     flowDesc: ''
-  40be4169-57fd-45cf-b9f2-be4772b3d396: {ver: 2, file: prova2.snapshot, comments: '',
-    author: anonymous, created: 1657876550783, flowName: prova2, flowDesc: ''}
 layoutVer: 1
 bucketId: cf43e710-ad10-4921-96ff-10c259db8d47
