@@ -226,7 +226,7 @@
           "label" : "Get now date and renaming\n",
           "position" : {
             "x" : 2856.0,
-            "y" : -864.0
+            "y" : -832.0
           },
           "style" : {
             "font-size" : "20px"
@@ -242,7 +242,7 @@
           "label" : "Save Data in a folder",
           "position" : {
             "x" : 3568.0,
-            "y" : -856.0
+            "y" : -840.0
           },
           "style" : {
             "font-size" : "20px"
@@ -274,7 +274,7 @@
           "label" : "Take only name file\n",
           "position" : {
             "x" : 2224.0,
-            "y" : -864.0
+            "y" : -840.0
           },
           "style" : {
             "font-size" : "20px"
@@ -358,7 +358,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2856.0,
-            "y" : -816.0
+            "y" : -792.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -427,7 +427,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2224.0,
-            "y" : -824.0
+            "y" : -800.0
           },
           "properties" : {
             "filename" : "${filename:substringBeforeLast('.')}",
@@ -772,7 +772,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 3568.0,
-            "y" : -808.0
+            "y" : -800.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
