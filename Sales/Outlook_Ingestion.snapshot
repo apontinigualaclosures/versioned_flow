@@ -264,6 +264,22 @@
           },
           "width" : 328.0,
           "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
+          "identifier" : "50632dae-8ea1-37b2-8183-01216ccd0717",
+          "instanceIdentifier" : "01821014-8602-112f-318f-c700ace621b0",
+          "label" : "Save Data in a folder",
+          "position" : {
+            "x" : 2216.0,
+            "y" : -1080.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 200.0,
+          "zIndex" : 0
         } ],
         "name" : "Outlook Ingestion",
         "outputPorts" : [ ],
