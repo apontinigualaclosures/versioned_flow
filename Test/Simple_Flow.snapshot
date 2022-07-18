@@ -1,0 +1,934 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "69a06bcb-1710-3fb2-8d2e-92a662bc3fa6",
+            "instanceIdentifier" : "15d9011a-ed01-3e96-512b-ae9576988a83",
+            "name" : "Save File < 50",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "f19ca4ed-3f9f-33bc-bd2f-4e854d662786",
+          "instanceIdentifier" : "bdcbbeeb-afe2-3f37-17d2-31606eb84b9f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "lessThan50" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "a8b669fc-7111-32ee-90ed-8a370fa35400",
+            "instanceIdentifier" : "b4d5ec3f-5ee9-3c52-4930-60f9f382e01c",
+            "name" : "Route based on values",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "505685af-7c49-30b3-b182-3c6c4ff094d7",
+            "instanceIdentifier" : "9f49ea8b-f6ca-3970-2eb9-9a9cb1330871",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "f45feefc-ef89-38c7-9df5-474ac5917a49",
+          "instanceIdentifier" : "966f533a-cd8e-3d30-cf0a-29b93d9740fb",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "a8b669fc-7111-32ee-90ed-8a370fa35400",
+            "instanceIdentifier" : "b4d5ec3f-5ee9-3c52-4930-60f9f382e01c",
+            "name" : "Route based on values",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "a8b669fc-7111-32ee-90ed-8a370fa35400",
+            "instanceIdentifier" : "b4d5ec3f-5ee9-3c52-4930-60f9f382e01c",
+            "name" : "Route based on values",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "b395eee7-f1e0-3a41-8104-d99e1c5c8e86",
+          "instanceIdentifier" : "a96ee6b6-aeff-3aac-cba6-9765e1e06757",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "f04e2c47-d4a8-3c45-8afa-7e20ba20190c",
+            "instanceIdentifier" : "fab231b7-878f-3a74-5626-2bc2d5251e2f",
+            "name" : "Update Filename",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "100 KB",
+          "backPressureObjectThreshold" : 10,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "f04e2c47-d4a8-3c45-8afa-7e20ba20190c",
+            "instanceIdentifier" : "fab231b7-878f-3a74-5626-2bc2d5251e2f",
+            "name" : "Update Filename",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "3600 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "1a02cd06-742f-3d5a-99f8-624f85239b8e",
+          "instanceIdentifier" : "db50e1fa-6437-3bab-222b-b50eb794ce92",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched", "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "488b310f-8c99-3615-a094-fd60b5d49e93",
+            "instanceIdentifier" : "28428d14-3dfb-3ef1-e1e7-fe34438f0370",
+            "name" : "Extract Text",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "152c299d-1916-3fb8-ab11-f78319c2db08",
+            "instanceIdentifier" : "ba8b37b0-899a-39db-7924-c31790a85a48",
+            "name" : "Save Files >= 50",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "c896907c-ebe0-39c3-b825-69905aaac3de",
+          "instanceIdentifier" : "e3751624-581f-32b5-e479-d7db3099e6b5",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "bigThan50" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "a8b669fc-7111-32ee-90ed-8a370fa35400",
+            "instanceIdentifier" : "b4d5ec3f-5ee9-3c52-4930-60f9f382e01c",
+            "name" : "Route based on values",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "488b310f-8c99-3615-a094-fd60b5d49e93",
+            "instanceIdentifier" : "28428d14-3dfb-3ef1-e1e7-fe34438f0370",
+            "name" : "Extract Text",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "cf33bd8a-b6dd-3c40-b3b4-dfdc5809d9de",
+          "instanceIdentifier" : "19622a6a-250f-3c5c-1c99-7b871f6cac4a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+            "id" : "f9039551-746d-3b95-8590-4d8205ecd99c",
+            "instanceIdentifier" : "b15c4d45-3588-39a9-23ae-6bb5c49384ea",
+            "name" : "Generate Files",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "1125bc78-0182-1000-d215-f4d88836931f",
+        "labels" : [ {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 64.0,
+          "identifier" : "64934ca9-8b71-3c60-a840-daa1f272ea88",
+          "instanceIdentifier" : "174157ab-5def-3bf5-810d-42885af04ef0",
+          "label" : "5) Files that contain a random \n     number above 50",
+          "position" : {
+            "x" : 1816.0,
+            "y" : 280.0
+          },
+          "style" : {
+            "background-color" : "#f9d4ff",
+            "font-size" : "18px"
+          },
+          "width" : 248.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 64.0,
+          "identifier" : "56a084a5-2df0-37d7-bdcd-c98f4e75f380",
+          "instanceIdentifier" : "c90c7c4f-3e7e-383a-4784-9778f318eb37",
+          "label" : "5) Files that contain a random \n     number below 50",
+          "position" : {
+            "x" : 1808.0,
+            "y" : 584.0
+          },
+          "style" : {
+            "background-color" : "#ffd4ec",
+            "font-size" : "18px"
+          },
+          "width" : 248.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 40.0,
+          "identifier" : "16fe5d2e-4d94-3a14-bbde-de2efdd7b66b",
+          "instanceIdentifier" : "58aa335f-4ded-3fb0-502b-7379d18aadba",
+          "label" : "2) Extract text and assign into properties",
+          "position" : {
+            "x" : 2192.0,
+            "y" : 40.0
+          },
+          "style" : {
+            "background-color" : "#deffd6",
+            "font-size" : "18px"
+          },
+          "width" : 352.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 64.0,
+          "identifier" : "e65dc944-a93b-3219-a32c-62e60612ea3f",
+          "instanceIdentifier" : "47f28475-0624-3305-99f1-40845bb27146",
+          "label" : "4) Route the flowfiles to two \n     destinations based on their content",
+          "position" : {
+            "x" : 2456.0,
+            "y" : 472.0
+          },
+          "style" : {
+            "background-color" : "#d6e9ff",
+            "font-size" : "18px"
+          },
+          "width" : 336.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 56.0,
+          "identifier" : "f690375e-cef1-3273-bb13-86aaa7ecc6b0",
+          "instanceIdentifier" : "40f3245b-27c0-3c10-174a-065ed7627c98",
+          "label" : "1)  Generate files with random content:\n      time, random number (0-99)",
+          "position" : {
+            "x" : 1584.0,
+            "y" : 0.0
+          },
+          "style" : {
+            "font-size" : "18px"
+          },
+          "width" : 352.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "height" : 56.0,
+          "identifier" : "5332329d-5506-3d09-8b08-5d63c5ab461c",
+          "instanceIdentifier" : "a78008a8-e979-3d1a-015a-36cde58ee861",
+          "label" : "3) Amend the file name based on \n     the extracted properties",
+          "position" : {
+            "x" : 2568.0,
+            "y" : 288.0
+          },
+          "style" : {
+            "background-color" : "#d6ffe7",
+            "font-size" : "18px"
+          },
+          "width" : 304.0,
+          "zIndex" : 0
+        } ],
+        "name" : "Prova Import Template",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 744.0,
+          "y" : -120.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "a8b669fc-7111-32ee-90ed-8a370fa35400",
+          "instanceIdentifier" : "b4d5ec3f-5ee9-3c52-4930-60f9f382e01c",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Route based on values",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2088.0,
+            "y" : 464.0
+          },
+          "properties" : {
+            "bigThan50" : "${random-value:ge(50)}",
+            "Routing Strategy" : "Route to Property name",
+            "lessThan50" : "${random-value:lt(50)}"
+          },
+          "propertyDescriptors" : {
+            "bigThan50" : {
+              "displayName" : "bigThan50",
+              "identifiesControllerService" : false,
+              "name" : "bigThan50",
+              "sensitive" : false
+            },
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "lessThan50" : {
+              "displayName" : "lessThan50",
+              "identifiesControllerService" : false,
+              "name" : "lessThan50",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "505685af-7c49-30b3-b182-3c6c4ff094d7",
+          "instanceIdentifier" : "9f49ea8b-f6ca-3970-2eb9-9a9cb1330871",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LogMessage",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2072.0,
+            "y" : 664.0
+          },
+          "properties" : {
+            "log-message" : "Found an invalid file: ${filename}",
+            "log-level" : "info"
+          },
+          "propertyDescriptors" : {
+            "log-message" : {
+              "displayName" : "Log message",
+              "identifiesControllerService" : false,
+              "name" : "log-message",
+              "sensitive" : false
+            },
+            "log-level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "log-level",
+              "sensitive" : false
+            },
+            "log-prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "log-prefix",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LogMessage",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "f04e2c47-d4a8-3c45-8afa-7e20ba20190c",
+          "instanceIdentifier" : "fab231b7-878f-3a74-5626-2bc2d5251e2f",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Update Filename",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2200.0,
+            "y" : 272.0
+          },
+          "properties" : {
+            "filename" : "${random-value}-${seconds}-${UUID()}",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "69a06bcb-1710-3fb2-8d2e-92a662bc3fa6",
+          "instanceIdentifier" : "15d9011a-ed01-3e96-512b-ae9576988a83",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Save File < 50",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1416.0,
+            "y" : 472.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Permissions" : "777",
+            "Directory" : "${target-directory}/below50",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "f9039551-746d-3b95-8590-4d8205ecd99c",
+          "instanceIdentifier" : "b15c4d45-3588-39a9-23ae-6bb5c49384ea",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Generate Files",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1584.0,
+            "y" : 64.0
+          },
+          "properties" : {
+            "character-set" : "UTF-8",
+            "File Size" : "10B",
+            "generate-ff-custom-text" : "${now():toNumber()},${UUID()},${now():format('ss')},${random():mod(99)}",
+            "Batch Size" : "1",
+            "Unique FlowFiles" : "false",
+            "Data Format" : "Text"
+          },
+          "propertyDescriptors" : {
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "File Size" : {
+              "displayName" : "File Size",
+              "identifiesControllerService" : false,
+              "name" : "File Size",
+              "sensitive" : false
+            },
+            "mime-type" : {
+              "displayName" : "Mime Type",
+              "identifiesControllerService" : false,
+              "name" : "mime-type",
+              "sensitive" : false
+            },
+            "generate-ff-custom-text" : {
+              "displayName" : "Custom Text",
+              "identifiesControllerService" : false,
+              "name" : "generate-ff-custom-text",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Unique FlowFiles" : {
+              "displayName" : "Unique FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "Unique FlowFiles",
+              "sensitive" : false
+            },
+            "Data Format" : {
+              "displayName" : "Data Format",
+              "identifiesControllerService" : false,
+              "name" : "Data Format",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "10 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "488b310f-8c99-3615-a094-fd60b5d49e93",
+          "instanceIdentifier" : "28428d14-3dfb-3ef1-e1e7-fe34438f0370",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Extract Text",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2192.0,
+            "y" : 88.0
+          },
+          "properties" : {
+            "Enable Unicode Predefined Character Classes" : "false",
+            "Permit Whitespace and Comments in Pattern" : "false",
+            "Enable Unicode-aware Case Folding" : "false",
+            "Enable DOTALL Mode" : "false",
+            "Enable Unix Lines Mode" : "false",
+            "extract-text-enable-named-groups" : "false",
+            "random-value" : ".*,.*,.*,(.*)",
+            "Maximum Buffer Size" : "1 MB",
+            "Enable Canonical Equivalence" : "false",
+            "Enable Case-insensitive Matching" : "false",
+            "Enable Multiline Mode" : "false",
+            "seconds" : ".*,.*,(.*),.*",
+            "Maximum Capture Group Length" : "1024",
+            "Enable Literal Parsing of the Pattern" : "false",
+            "Character Set" : "UTF-8",
+            "Include Capture Group 0" : "true",
+            "extract-text-enable-repeating-capture-group" : "false"
+          },
+          "propertyDescriptors" : {
+            "Enable Unicode Predefined Character Classes" : {
+              "displayName" : "Enable Unicode Predefined Character Classes",
+              "identifiesControllerService" : false,
+              "name" : "Enable Unicode Predefined Character Classes",
+              "sensitive" : false
+            },
+            "Permit Whitespace and Comments in Pattern" : {
+              "displayName" : "Permit Whitespace and Comments in Pattern",
+              "identifiesControllerService" : false,
+              "name" : "Permit Whitespace and Comments in Pattern",
+              "sensitive" : false
+            },
+            "Enable Unicode-aware Case Folding" : {
+              "displayName" : "Enable Unicode-aware Case Folding",
+              "identifiesControllerService" : false,
+              "name" : "Enable Unicode-aware Case Folding",
+              "sensitive" : false
+            },
+            "Enable DOTALL Mode" : {
+              "displayName" : "Enable DOTALL Mode",
+              "identifiesControllerService" : false,
+              "name" : "Enable DOTALL Mode",
+              "sensitive" : false
+            },
+            "Enable Unix Lines Mode" : {
+              "displayName" : "Enable Unix Lines Mode",
+              "identifiesControllerService" : false,
+              "name" : "Enable Unix Lines Mode",
+              "sensitive" : false
+            },
+            "extract-text-enable-named-groups" : {
+              "displayName" : "Enable named group support",
+              "identifiesControllerService" : false,
+              "name" : "extract-text-enable-named-groups",
+              "sensitive" : false
+            },
+            "random-value" : {
+              "displayName" : "random-value",
+              "identifiesControllerService" : false,
+              "name" : "random-value",
+              "sensitive" : false
+            },
+            "Maximum Buffer Size" : {
+              "displayName" : "Maximum Buffer Size",
+              "identifiesControllerService" : false,
+              "name" : "Maximum Buffer Size",
+              "sensitive" : false
+            },
+            "Enable Canonical Equivalence" : {
+              "displayName" : "Enable Canonical Equivalence",
+              "identifiesControllerService" : false,
+              "name" : "Enable Canonical Equivalence",
+              "sensitive" : false
+            },
+            "Enable Case-insensitive Matching" : {
+              "displayName" : "Enable Case-insensitive Matching",
+              "identifiesControllerService" : false,
+              "name" : "Enable Case-insensitive Matching",
+              "sensitive" : false
+            },
+            "Enable Multiline Mode" : {
+              "displayName" : "Enable Multiline Mode",
+              "identifiesControllerService" : false,
+              "name" : "Enable Multiline Mode",
+              "sensitive" : false
+            },
+            "seconds" : {
+              "displayName" : "seconds",
+              "identifiesControllerService" : false,
+              "name" : "seconds",
+              "sensitive" : false
+            },
+            "Maximum Capture Group Length" : {
+              "displayName" : "Maximum Capture Group Length",
+              "identifiesControllerService" : false,
+              "name" : "Maximum Capture Group Length",
+              "sensitive" : false
+            },
+            "Enable Literal Parsing of the Pattern" : {
+              "displayName" : "Enable Literal Parsing of the Pattern",
+              "identifiesControllerService" : false,
+              "name" : "Enable Literal Parsing of the Pattern",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Include Capture Group 0" : {
+              "displayName" : "Include Capture Group 0",
+              "identifiesControllerService" : false,
+              "name" : "Include Capture Group 0",
+              "sensitive" : false
+            },
+            "extract-text-enable-repeating-capture-group" : {
+              "displayName" : "Enable repeating capture group",
+              "identifiesControllerService" : false,
+              "name" : "extract-text-enable-repeating-capture-group",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ExtractText",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ed2f4bfb-5dec-3066-a9eb-4ce49dd00182",
+          "identifier" : "152c299d-1916-3fb8-ab11-f78319c2db08",
+          "instanceIdentifier" : "ba8b37b0-899a-39db-7924-c31790a85a48",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Save Files >= 50",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1424.0,
+            "y" : 296.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Permissions" : "777",
+            "Directory" : "${target-directory}/above50",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 0,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
