@@ -148,6 +148,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "7c638000-d6f7-3c9d-9738-f87c5933af45",
+            "instanceIdentifier" : "01821048-98d4-1130-5130-25ce468951cc",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "a73e947c-973e-310b-bee8-946962a4cc00",
+          "instanceIdentifier" : "0182103d-98d4-1130-74b3-788572a43806",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "354dd03e-78d1-3913-854d-b505d7200bd8",
+            "instanceIdentifier" : "0182102e-98d4-1130-5cbb-d35e92c89f8f",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
             "id" : "9d1d5a50-eca4-37b4-b2c2-3d97767e28e8",
             "instanceIdentifier" : "8602112f-1030-1182-1fa3-0b96e4a89934",
             "name" : "UpdateAttribute",
@@ -302,6 +335,72 @@
             "id" : "910a8b45-2408-3378-9ae6-0f68e04cc50d",
             "instanceIdentifier" : "86021139-1030-1182-7f25-5334cd0c38f5",
             "name" : "ConvertExcelToCSVProcessor",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "27606bda-8bed-3fdf-8cbc-7e26341b5407",
+            "instanceIdentifier" : "01821000-98d4-1130-f2ca-d45afc84ef87",
+            "name" : "ExtractEmailAttachments",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "1ddf0499-773b-3b1e-8fc3-2bd066bf8510",
+          "instanceIdentifier" : "01821039-98d4-1130-fdc1-3f5fb130b148",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "guala_check" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "354dd03e-78d1-3913-854d-b505d7200bd8",
+            "instanceIdentifier" : "0182102e-98d4-1130-5cbb-d35e92c89f8f",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "13342a14-f4c3-37ce-b777-2572447a1beb",
+            "instanceIdentifier" : "0182104c-98d4-1130-c51d-ea32fa23f15d",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "d95fb5c7-d554-32b1-a162-10d667a1b428",
+          "instanceIdentifier" : "01821051-98d4-1130-e48c-21a8891f8671",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "7c638000-d6f7-3c9d-9738-f87c5933af45",
+            "instanceIdentifier" : "01821048-98d4-1130-5130-25ce468951cc",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -478,15 +577,15 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-            "id" : "27606bda-8bed-3fdf-8cbc-7e26341b5407",
-            "instanceIdentifier" : "01821000-98d4-1130-f2ca-d45afc84ef87",
-            "name" : "ExtractEmailAttachments",
+            "id" : "28f69487-4cfa-3294-8a33-89e623672cb1",
+            "instanceIdentifier" : "0182104b-98d4-1130-fd64-3ed21e3ba2d2",
+            "name" : "PutFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "bc90eeb2-3420-37f5-849c-05579bdb575f",
-          "instanceIdentifier" : "01821005-98d4-1130-942b-60143dfe789a",
+          "identifier" : "050b7486-da3c-315d-8ec9-d5a27007dc96",
+          "instanceIdentifier" : "0182104e-98d4-1130-fdc7-042a9e02e581",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -497,9 +596,9 @@
           "source" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-            "id" : "299bcd60-994b-3269-bf2c-658fe55fe0c3",
-            "instanceIdentifier" : "112c8d45-0182-1000-2897-cec465367ac7",
-            "name" : "ConsumeIMAP",
+            "id" : "13342a14-f4c3-37ce-b777-2572447a1beb",
+            "instanceIdentifier" : "0182104c-98d4-1130-c51d-ea32fa23f15d",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -632,6 +731,39 @@
             "id" : "299bcd60-994b-3269-bf2c-658fe55fe0c3",
             "instanceIdentifier" : "112c8d45-0182-1000-2897-cec465367ac7",
             "name" : "ConsumeIMAP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "354dd03e-78d1-3913-854d-b505d7200bd8",
+            "instanceIdentifier" : "0182102e-98d4-1130-5cbb-d35e92c89f8f",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "ff464577-01bc-31c6-9431-37a5c629e674",
+          "instanceIdentifier" : "0182103b-98d4-1130-c1ab-0942bc9152dc",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "d3f838da-39d1-3aa5-954e-c7251bcb94f2",
+            "instanceIdentifier" : "1130c418-0182-1000-7a96-498ca1d833f6",
+            "name" : "ExtractEmailHeaders",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -1006,12 +1138,28 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
+          "identifier" : "d151efdb-dae8-3e7f-b9d1-6e78240913fd",
+          "instanceIdentifier" : "01821053-98d4-1130-aeab-8bb697317642",
+          "label" : "Take only name file\n",
+          "position" : {
+            "x" : 1088.0,
+            "y" : -1680.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 192.0,
+          "zIndex" : 4
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
           "identifier" : "f936bcad-1bcc-3ff5-acde-6c99820f301d",
           "instanceIdentifier" : "01821000-8602-112f-d6f9-3bc30d21d869",
           "label" : "Get Csv from Controller",
           "position" : {
-            "x" : 1504.0,
-            "y" : -712.0
+            "x" : -3160.0,
+            "y" : -496.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1026,8 +1174,8 @@
           "instanceIdentifier" : "0182100a-8602-112f-add2-8e7b13f1c77e",
           "label" : "Take only name file\n",
           "position" : {
-            "x" : 2256.0,
-            "y" : -424.0
+            "x" : -2408.0,
+            "y" : -208.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1037,18 +1185,34 @@
         }, {
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "height" : 40.0,
-          "identifier" : "142e1e7d-ff54-303e-bb0f-819f84d5f2ae",
-          "instanceIdentifier" : "0182100b-98d4-1130-80fb-bb41a1b84bd7",
-          "label" : "Check  NULL and NOT NULL on Customer column\n",
+          "height" : 32.0,
+          "identifier" : "680326e4-ed51-396d-888f-c6a03b04dd45",
+          "instanceIdentifier" : "01821050-98d4-1130-a05f-3612cf44a3d0",
+          "label" : "Save Data in a folder",
           "position" : {
-            "x" : 2832.0,
-            "y" : -1328.0
+            "x" : 2072.0,
+            "y" : -2072.0
           },
           "style" : {
             "font-size" : "20px"
           },
-          "width" : 472.0,
+          "width" : 200.0,
+          "zIndex" : 2
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 72.0,
+          "identifier" : "142e1e7d-ff54-303e-bb0f-819f84d5f2ae",
+          "instanceIdentifier" : "0182100b-98d4-1130-80fb-bb41a1b84bd7",
+          "label" : "Check  NULL and NOT NULL on Customer column \nand renaming Columns\n",
+          "position" : {
+            "x" : 2416.0,
+            "y" : -872.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 456.0,
           "zIndex" : 0
         }, {
           "componentType" : "LABEL",
@@ -1070,12 +1234,45 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
+          "identifier" : "9ce1583c-d670-3ce1-a5aa-22e206328533",
+          "instanceIdentifier" : "0182104a-98d4-1130-4ce5-1fa8dd56272f",
+          "label" : "Get now date and renaming\n",
+          "position" : {
+            "x" : 1432.0,
+            "y" : -1896.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 280.0,
+          "zIndex" : 3
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 744.0,
+          "identifier" : "f740f5c9-0668-33da-9362-b7a38ea047c0",
+          "instanceIdentifier" : "01821055-98d4-1130-9bc0-453afabcf765",
+          "label" : "Save Mail in not Accepted",
+          "position" : {
+            "x" : 824.0,
+            "y" : -2160.0
+          },
+          "style" : {
+            "background-color" : "#dbdbdb",
+            "font-size" : "22px"
+          },
+          "width" : 1904.0,
+          "zIndex" : 1
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
           "identifier" : "b43f4232-b739-370b-9c49-c0481b7e1117",
           "instanceIdentifier" : "0182101c-8602-112f-7499-2fbd8ffa6671",
           "label" : "Get now date and renaming\n",
           "position" : {
-            "x" : 2848.0,
-            "y" : -400.0
+            "x" : -1816.0,
+            "y" : -184.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1090,8 +1287,8 @@
           "instanceIdentifier" : "0182100c-8602-112f-b811-8a13c1a84b3a",
           "label" : "Save Data in a folder",
           "position" : {
-            "x" : 3560.0,
-            "y" : -408.0
+            "x" : -1104.0,
+            "y" : -192.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1106,8 +1303,8 @@
           "instanceIdentifier" : "01821004-98d4-1130-5270-d81740936233",
           "label" : "Trasform Excel in Csv",
           "position" : {
-            "x" : 2184.0,
-            "y" : -1336.0
+            "x" : 1688.0,
+            "y" : -856.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1122,8 +1319,8 @@
           "instanceIdentifier" : "8602112f-102c-1182-a212-4a768cc97d65",
           "label" : "Check  NULL and NOT NULL on Customer column\n",
           "position" : {
-            "x" : 2208.0,
-            "y" : -688.0
+            "x" : -2456.0,
+            "y" : -472.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1138,8 +1335,8 @@
           "instanceIdentifier" : "01821002-8602-112f-ba33-db810e819b4c",
           "label" : "Get Information Who sent data",
           "position" : {
-            "x" : 1144.0,
-            "y" : 40.0
+            "x" : -152.0,
+            "y" : -1144.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1154,8 +1351,8 @@
           "instanceIdentifier" : "112f8602-0182-1000-d758-c0998e185a67",
           "label" : "Get Email from address-controller",
           "position" : {
-            "x" : 792.0,
-            "y" : -656.0
+            "x" : -808.0,
+            "y" : -1152.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1166,12 +1363,28 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
+          "identifier" : "ded4135a-cc07-36f4-aaa3-e51d45165e8b",
+          "instanceIdentifier" : "01821041-98d4-1130-7d2e-99576284320d",
+          "label" : "Check who is sending email",
+          "position" : {
+            "x" : 552.0,
+            "y" : -1152.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 296.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
           "identifier" : "1851ca1e-ebea-3c25-b9bf-1c02159201c6",
           "instanceIdentifier" : "01821002-98d4-1130-1864-48e50084e555",
           "label" : "Get Excel from Controller",
           "position" : {
-            "x" : 1536.0,
-            "y" : -1336.0
+            "x" : 1064.0,
+            "y" : -856.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1193,6 +1406,22 @@
             "font-size" : "20px"
           },
           "width" : 72.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 64.0,
+          "identifier" : "743fb357-adb2-3c58-bd49-13211cc585c4",
+          "instanceIdentifier" : "0182103f-98d4-1130-9640-e643a4c2466a",
+          "label" : "Send mail if sender is not gualaclosures.com \nERROR CHECK IF FIREWALL BLOCK IT\n",
+          "position" : {
+            "x" : -48.0,
+            "y" : -2088.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 424.0,
           "zIndex" : 0
         } ],
         "name" : "Outlook Ingestion",
@@ -1222,8 +1451,8 @@
           "name" : "ConvertExcelToCSVProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2184.0,
-            "y" : -1280.0
+            "x" : 1688.0,
+            "y" : -808.0
           },
           "properties" : {
             "excel-extract-first-row" : "0",
@@ -1360,8 +1589,8 @@
           "name" : "QueryRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2840.0,
-            "y" : -1280.0
+            "x" : 2416.0,
+            "y" : -784.0
           },
           "properties" : {
             "cache-schema" : "false",
@@ -1452,8 +1681,8 @@
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3760.0,
-            "y" : -1008.0
+            "x" : -824.0,
+            "y" : -656.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
@@ -1515,6 +1744,94 @@
           "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "28f69487-4cfa-3294-8a33-89e623672cb1",
+          "instanceIdentifier" : "0182104b-98d4-1130-fd64-3ed21e3ba2d2",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "PutFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2072.0,
+            "y" : -2032.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Permissions" : "777",
+            "Directory" : "./ls-target/email_error",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -1599,7 +1916,7 @@
           "type" : "org.apache.nifi.processors.standard.AttributesToCSV",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "set state fail" ],
+          "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -1612,14 +1929,14 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "723f9391-310a-344b-aecd-654b712cde3e",
-          "instanceIdentifier" : "01821003-8602-112f-2cb0-fbcbd3f324a6",
+          "identifier" : "7c638000-d6f7-3c9d-9738-f87c5933af45",
+          "instanceIdentifier" : "01821048-98d4-1130-5130-25ce468951cc",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2168.0,
-            "y" : -384.0
+            "x" : 1080.0,
+            "y" : -1640.0
           },
           "properties" : {
             "filename" : "${filename:substringBeforeLast('.')}",
@@ -1661,7 +1978,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -1687,8 +2004,8 @@
           "name" : "ExtractEmailAttachments",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1536.0,
-            "y" : -1280.0
+            "x" : 976.0,
+            "y" : -808.0
           },
           "properties" : { },
           "propertyDescriptors" : { },
@@ -1700,249 +2017,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.email.ExtractEmailAttachments",
-          "yieldDuration" : "1 min"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-email-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.16.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "299bcd60-994b-3269-bf2c-658fe55fe0c3",
-          "instanceIdentifier" : "112c8d45-0182-1000-2897-cec465367ac7",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "ConsumeIMAP",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 896.0,
-            "y" : -600.0
-          },
-          "properties" : {
-            "delete.messages" : "false",
-            "folder" : "INBOX",
-            "port" : "993",
-            "connection.timeout" : "15 sec",
-            "host" : "imap-mail.outlook.com",
-            "Mark Messages as Read" : "false",
-            "user" : "apontini_test_user@outlook.com",
-            "Use SSL" : "true",
-            "fetch.size" : "20"
-          },
-          "propertyDescriptors" : {
-            "delete.messages" : {
-              "displayName" : "Delete Messages",
-              "identifiesControllerService" : false,
-              "name" : "delete.messages",
-              "sensitive" : false
-            },
-            "password" : {
-              "displayName" : "Password",
-              "identifiesControllerService" : false,
-              "name" : "password",
-              "sensitive" : true
-            },
-            "folder" : {
-              "displayName" : "Folder",
-              "identifiesControllerService" : false,
-              "name" : "folder",
-              "sensitive" : false
-            },
-            "port" : {
-              "displayName" : "Port",
-              "identifiesControllerService" : false,
-              "name" : "port",
-              "sensitive" : false
-            },
-            "connection.timeout" : {
-              "displayName" : "Connection timeout",
-              "identifiesControllerService" : false,
-              "name" : "connection.timeout",
-              "sensitive" : false
-            },
-            "host" : {
-              "displayName" : "Host Name",
-              "identifiesControllerService" : false,
-              "name" : "host",
-              "sensitive" : false
-            },
-            "Mark Messages as Read" : {
-              "displayName" : "Mark Messages as Read",
-              "identifiesControllerService" : false,
-              "name" : "Mark Messages as Read",
-              "sensitive" : false
-            },
-            "user" : {
-              "displayName" : "User Name",
-              "identifiesControllerService" : false,
-              "name" : "user",
-              "sensitive" : false
-            },
-            "Use SSL" : {
-              "displayName" : "Use SSL",
-              "identifiesControllerService" : false,
-              "name" : "Use SSL",
-              "sensitive" : false
-            },
-            "fetch.size" : {
-              "displayName" : "Fetch Size",
-              "identifiesControllerService" : false,
-              "name" : "fetch.size",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.email.ConsumeIMAP",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-email-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.16.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "d3f838da-39d1-3aa5-954e-c7251bcb94f2",
-          "instanceIdentifier" : "1130c418-0182-1000-7a96-498ca1d833f6",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "ExtractEmailHeaders",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1144.0,
-            "y" : -96.0
-          },
-          "properties" : {
-            "STRICT_ADDRESS_PARSING" : "true",
-            "CAPTURED_HEADERS" : "x-mailer"
-          },
-          "propertyDescriptors" : {
-            "STRICT_ADDRESS_PARSING" : {
-              "displayName" : "Email Address Parsing",
-              "identifiesControllerService" : false,
-              "name" : "STRICT_ADDRESS_PARSING",
-              "sensitive" : false
-            },
-            "CAPTURED_HEADERS" : {
-              "displayName" : "Additional Header List",
-              "identifiesControllerService" : false,
-              "name" : "CAPTURED_HEADERS",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.email.ExtractEmailHeaders",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "success", "failure" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.16.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "5fb7a407-3002-39e5-ae02-5deac563851a",
-          "instanceIdentifier" : "01821028-8602-112f-1a49-abedfe9d0161",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "PutFile",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 120.0,
-            "y" : 488.0
-          },
-          "properties" : {
-            "Create Missing Directories" : "true",
-            "Permissions" : "777",
-            "Directory" : "./ls-target",
-            "Conflict Resolution Strategy" : "fail"
-          },
-          "propertyDescriptors" : {
-            "Group" : {
-              "displayName" : "Group",
-              "identifiesControllerService" : false,
-              "name" : "Group",
-              "sensitive" : false
-            },
-            "Owner" : {
-              "displayName" : "Owner",
-              "identifiesControllerService" : false,
-              "name" : "Owner",
-              "sensitive" : false
-            },
-            "Create Missing Directories" : {
-              "displayName" : "Create Missing Directories",
-              "identifiesControllerService" : false,
-              "name" : "Create Missing Directories",
-              "sensitive" : false
-            },
-            "Permissions" : {
-              "displayName" : "Permissions",
-              "identifiesControllerService" : false,
-              "name" : "Permissions",
-              "sensitive" : false
-            },
-            "Maximum File Count" : {
-              "displayName" : "Maximum File Count",
-              "identifiesControllerService" : false,
-              "name" : "Maximum File Count",
-              "sensitive" : false
-            },
-            "Last Modified Time" : {
-              "displayName" : "Last Modified Time",
-              "identifiesControllerService" : false,
-              "name" : "Last Modified Time",
-              "sensitive" : false
-            },
-            "Directory" : {
-              "displayName" : "Directory",
-              "identifiesControllerService" : false,
-              "name" : "Directory",
-              "sensitive" : false
-            },
-            "Conflict Resolution Strategy" : {
-              "displayName" : "Conflict Resolution Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Conflict Resolution Strategy",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "1 min",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.PutFile",
           "yieldDuration" : "1 min"
         }, {
           "autoTerminatedRelationships" : [ "success", "failure" ],
@@ -1964,8 +2038,8 @@
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3560.0,
-            "y" : -368.0
+            "x" : -1104.0,
+            "y" : -152.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
@@ -2046,83 +2120,14 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "7c3f37e7-ff5d-39d4-9750-920d08a6bf08",
-          "instanceIdentifier" : "01821030-8602-112f-2ec9-0ce90ee6695d",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "UpdateAttribute",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 3048.0,
-            "y" : -992.0
-          },
-          "properties" : {
-            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
-            "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100"
-          },
-          "propertyDescriptors" : {
-            "Delete Attributes Expression" : {
-              "displayName" : "Delete Attributes Expression",
-              "identifiesControllerService" : false,
-              "name" : "Delete Attributes Expression",
-              "sensitive" : false
-            },
-            "filename" : {
-              "displayName" : "filename",
-              "identifiesControllerService" : false,
-              "name" : "filename",
-              "sensitive" : false
-            },
-            "Store State" : {
-              "displayName" : "Store State",
-              "identifiesControllerService" : false,
-              "name" : "Store State",
-              "sensitive" : false
-            },
-            "canonical-value-lookup-cache-size" : {
-              "displayName" : "Cache Value Lookup Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "canonical-value-lookup-cache-size",
-              "sensitive" : false
-            },
-            "Stateful Variables Initial Value" : {
-              "displayName" : "Stateful Variables Initial Value",
-              "identifiesControllerService" : false,
-              "name" : "Stateful Variables Initial Value",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "1 min",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 min"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-update-attribute-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.16.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "identifier" : "78ecad25-5d50-3124-a578-0feca24de006",
           "instanceIdentifier" : "0182101a-8602-112f-b669-e1eb37fddd38",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2848.0,
-            "y" : -360.0
+            "x" : -1816.0,
+            "y" : -144.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -2169,40 +2174,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 min"
-        }, {
-          "autoTerminatedRelationships" : [ "original", "failure" ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-email-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.16.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "b2dd5e7e-b4e9-34f3-b581-4501c3bfc7a1",
-          "instanceIdentifier" : "113098d4-0182-1000-a0b5-6e2740f818d2",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "ExtractEmailAttachments",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1504.0,
-            "y" : -672.0
-          },
-          "properties" : { },
-          "propertyDescriptors" : { },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "1 min",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.email.ExtractEmailAttachments",
           "yieldDuration" : "1 min"
         }, {
           "autoTerminatedRelationships" : [ "original", "failure" ],
@@ -2224,8 +2195,8 @@
           "name" : "QueryRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2280.0,
-            "y" : -832.0
+            "x" : -2456.0,
+            "y" : -640.0
           },
           "properties" : {
             "notNulls" : "SELECT * FROM FLOWFILE where Customer is not null",
@@ -2403,8 +2374,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3688.0,
-            "y" : -1464.0
+            "x" : 3256.0,
+            "y" : -1016.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -2472,8 +2443,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3040.0,
-            "y" : -680.0
+            "x" : -1624.0,
+            "y" : -464.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -2541,8 +2512,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3688.0,
-            "y" : -1200.0
+            "x" : 3352.0,
+            "y" : -624.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -2590,6 +2561,125 @@
           "style" : { },
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "30523b49-c5c3-34ad-b302-d1e9ef362fcc",
+          "instanceIdentifier" : "0182104d-98d4-1130-8d40-913e20d88f42",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -2528.0,
+            "y" : -2736.0
+          },
+          "properties" : {
+            "filename" : "${filename:substringBeforeLast('.')}",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "354dd03e-78d1-3913-854d-b505d7200bd8",
+          "instanceIdentifier" : "0182102e-98d4-1130-5cbb-d35e92c89f8f",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "RouteOnAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 552.0,
+            "y" : -1112.0
+          },
+          "properties" : {
+            "Routing Strategy" : "Route to Property name",
+            "guala_check" : "${anyMatchingAttribute(\"email.headers.from.*\"):contains(\"gualaclosures.com\"):and(${email.attachment_count:gt(0)})}"
+          },
+          "propertyDescriptors" : {
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "guala_check" : {
+              "displayName" : "guala_check",
+              "identifiesControllerService" : false,
+              "name" : "guala_check",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+          "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "valid", "invalid" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
@@ -2666,6 +2756,655 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ValidateCsv",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "13342a14-f4c3-37ce-b777-2572447a1beb",
+          "instanceIdentifier" : "0182104c-98d4-1130-c51d-ea32fa23f15d",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1432.0,
+            "y" : -1856.0
+          },
+          "properties" : {
+            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "set state fail" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "723f9391-310a-344b-aecd-654b712cde3e",
+          "instanceIdentifier" : "01821003-8602-112f-2cb0-fbcbd3f324a6",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -2496.0,
+            "y" : -168.0
+          },
+          "properties" : {
+            "filename" : "${filename:substringBeforeLast('.')}",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-email-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "299bcd60-994b-3269-bf2c-658fe55fe0c3",
+          "instanceIdentifier" : "112c8d45-0182-1000-2897-cec465367ac7",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ConsumeIMAP",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -784.0,
+            "y" : -1096.0
+          },
+          "properties" : {
+            "delete.messages" : "false",
+            "folder" : "INBOX",
+            "port" : "993",
+            "connection.timeout" : "15 sec",
+            "host" : "imap-mail.outlook.com",
+            "Mark Messages as Read" : "false",
+            "user" : "apontini_test_user@outlook.com",
+            "Use SSL" : "true",
+            "fetch.size" : "20"
+          },
+          "propertyDescriptors" : {
+            "delete.messages" : {
+              "displayName" : "Delete Messages",
+              "identifiesControllerService" : false,
+              "name" : "delete.messages",
+              "sensitive" : false
+            },
+            "password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "password",
+              "sensitive" : true
+            },
+            "folder" : {
+              "displayName" : "Folder",
+              "identifiesControllerService" : false,
+              "name" : "folder",
+              "sensitive" : false
+            },
+            "port" : {
+              "displayName" : "Port",
+              "identifiesControllerService" : false,
+              "name" : "port",
+              "sensitive" : false
+            },
+            "connection.timeout" : {
+              "displayName" : "Connection timeout",
+              "identifiesControllerService" : false,
+              "name" : "connection.timeout",
+              "sensitive" : false
+            },
+            "host" : {
+              "displayName" : "Host Name",
+              "identifiesControllerService" : false,
+              "name" : "host",
+              "sensitive" : false
+            },
+            "Mark Messages as Read" : {
+              "displayName" : "Mark Messages as Read",
+              "identifiesControllerService" : false,
+              "name" : "Mark Messages as Read",
+              "sensitive" : false
+            },
+            "user" : {
+              "displayName" : "User Name",
+              "identifiesControllerService" : false,
+              "name" : "user",
+              "sensitive" : false
+            },
+            "Use SSL" : {
+              "displayName" : "Use SSL",
+              "identifiesControllerService" : false,
+              "name" : "Use SSL",
+              "sensitive" : false
+            },
+            "fetch.size" : {
+              "displayName" : "Fetch Size",
+              "identifiesControllerService" : false,
+              "name" : "fetch.size",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.email.ConsumeIMAP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-email-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "d3f838da-39d1-3aa5-954e-c7251bcb94f2",
+          "instanceIdentifier" : "1130c418-0182-1000-7a96-498ca1d833f6",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ExtractEmailHeaders",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -136.0,
+            "y" : -1096.0
+          },
+          "properties" : {
+            "STRICT_ADDRESS_PARSING" : "true",
+            "CAPTURED_HEADERS" : "x-mailer"
+          },
+          "propertyDescriptors" : {
+            "STRICT_ADDRESS_PARSING" : {
+              "displayName" : "Email Address Parsing",
+              "identifiesControllerService" : false,
+              "name" : "STRICT_ADDRESS_PARSING",
+              "sensitive" : false
+            },
+            "CAPTURED_HEADERS" : {
+              "displayName" : "Additional Header List",
+              "identifiesControllerService" : false,
+              "name" : "CAPTURED_HEADERS",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.email.ExtractEmailHeaders",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "5fb7a407-3002-39e5-ae02-5deac563851a",
+          "instanceIdentifier" : "01821028-8602-112f-1a49-abedfe9d0161",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "PutFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 120.0,
+            "y" : 488.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Permissions" : "777",
+            "Directory" : "./ls-target",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "7c3f37e7-ff5d-39d4-9750-920d08a6bf08",
+          "instanceIdentifier" : "01821030-8602-112f-2ec9-0ce90ee6695d",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -1616.0,
+            "y" : -776.0
+          },
+          "properties" : {
+            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "original", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-email-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "b2dd5e7e-b4e9-34f3-b581-4501c3bfc7a1",
+          "instanceIdentifier" : "113098d4-0182-1000-a0b5-6e2740f818d2",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ExtractEmailAttachments",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -3160.0,
+            "y" : -456.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : { },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.email.ExtractEmailAttachments",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "9d881f45-21a6-3c77-90d0-2c04b2afeeeb",
+          "instanceIdentifier" : "0182103c-98d4-1130-d44b-3ef78cd7f804",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "PutEmail",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -24.0,
+            "y" : -1976.0
+          },
+          "properties" : {
+            "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
+            "Message" : "C'è stato il tentativo di inviare un file al database non da mail aziendale.",
+            "Attach File" : "true",
+            "SMTP Port" : "587",
+            "SMTP Auth" : "true",
+            "From" : "apontini_test_user@outlook.com",
+            "Include All Attributes In Message" : "true",
+            "SMTP Hostname" : "smtp-mail.outlook.com",
+            "Subject" : "ERROR CONTROLLER",
+            "SMTP X-Mailer Header" : "NiFi",
+            "Content Type" : "text/plain",
+            "SMTP Username" : "apontini_test_user@outlook.com",
+            "To" : "apontini@gualaclosures.com",
+            "email-ff-content-as-message" : "true",
+            "SMTP TLS" : "true"
+          },
+          "propertyDescriptors" : {
+            "CC" : {
+              "displayName" : "CC",
+              "identifiesControllerService" : false,
+              "name" : "CC",
+              "sensitive" : false
+            },
+            "SMTP Socket Factory" : {
+              "displayName" : "SMTP Socket Factory",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Socket Factory",
+              "sensitive" : false
+            },
+            "BCC" : {
+              "displayName" : "BCC",
+              "identifiesControllerService" : false,
+              "name" : "BCC",
+              "sensitive" : false
+            },
+            "Message" : {
+              "displayName" : "Message",
+              "identifiesControllerService" : false,
+              "name" : "Message",
+              "sensitive" : false
+            },
+            "Attach File" : {
+              "displayName" : "Attach File",
+              "identifiesControllerService" : false,
+              "name" : "Attach File",
+              "sensitive" : false
+            },
+            "attribute-name-regex" : {
+              "displayName" : "Attributes to Send as Headers (Regex)",
+              "identifiesControllerService" : false,
+              "name" : "attribute-name-regex",
+              "sensitive" : false
+            },
+            "SMTP Port" : {
+              "displayName" : "SMTP Port",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Port",
+              "sensitive" : false
+            },
+            "SMTP Auth" : {
+              "displayName" : "SMTP Auth",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Auth",
+              "sensitive" : false
+            },
+            "From" : {
+              "displayName" : "From",
+              "identifiesControllerService" : false,
+              "name" : "From",
+              "sensitive" : false
+            },
+            "Include All Attributes In Message" : {
+              "displayName" : "Include All Attributes In Message",
+              "identifiesControllerService" : false,
+              "name" : "Include All Attributes In Message",
+              "sensitive" : false
+            },
+            "SMTP Hostname" : {
+              "displayName" : "SMTP Hostname",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Hostname",
+              "sensitive" : false
+            },
+            "Subject" : {
+              "displayName" : "Subject",
+              "identifiesControllerService" : false,
+              "name" : "Subject",
+              "sensitive" : false
+            },
+            "SMTP X-Mailer Header" : {
+              "displayName" : "SMTP X-Mailer Header",
+              "identifiesControllerService" : false,
+              "name" : "SMTP X-Mailer Header",
+              "sensitive" : false
+            },
+            "Content Type" : {
+              "displayName" : "Content Type",
+              "identifiesControllerService" : false,
+              "name" : "Content Type",
+              "sensitive" : false
+            },
+            "SMTP Username" : {
+              "displayName" : "SMTP Username",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Username",
+              "sensitive" : false
+            },
+            "To" : {
+              "displayName" : "To",
+              "identifiesControllerService" : false,
+              "name" : "To",
+              "sensitive" : false
+            },
+            "SMTP Password" : {
+              "displayName" : "SMTP Password",
+              "identifiesControllerService" : false,
+              "name" : "SMTP Password",
+              "sensitive" : true
+            },
+            "email-ff-content-as-message" : {
+              "displayName" : "Flow file content as message",
+              "identifiesControllerService" : false,
+              "name" : "email-ff-content-as-message",
+              "sensitive" : false
+            },
+            "SMTP TLS" : {
+              "displayName" : "SMTP STARTTLS",
+              "identifiesControllerService" : false,
+              "name" : "SMTP TLS",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutEmail",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
