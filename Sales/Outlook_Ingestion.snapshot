@@ -1201,18 +1201,18 @@
         }, {
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "height" : 440.0,
+          "height" : 344.0,
           "identifier" : "142e1e7d-ff54-303e-bb0f-819f84d5f2ae",
           "instanceIdentifier" : "0182100b-98d4-1130-80fb-bb41a1b84bd7",
           "label" : "Check  NULL and NOT NULL on Customer column \nand renaming Columns\n",
           "position" : {
-            "x" : 2376.0,
-            "y" : -920.0
+            "x" : 2400.0,
+            "y" : -872.0
           },
           "style" : {
             "font-size" : "20px"
           },
-          "width" : 848.0,
+          "width" : 776.0,
           "zIndex" : 0
         }, {
           "componentType" : "LABEL",
@@ -1303,8 +1303,8 @@
           "instanceIdentifier" : "01821004-98d4-1130-5270-d81740936233",
           "label" : "Trasform Excel in Csv",
           "position" : {
-            "x" : 1656.0,
-            "y" : -856.0
+            "x" : 1648.0,
+            "y" : -816.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1335,8 +1335,8 @@
           "instanceIdentifier" : "01821002-8602-112f-ba33-db810e819b4c",
           "label" : "Get Information Who sent data",
           "position" : {
-            "x" : -136.0,
-            "y" : -1144.0
+            "x" : -144.0,
+            "y" : -1136.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1383,8 +1383,8 @@
           "instanceIdentifier" : "01821002-98d4-1130-1864-48e50084e555",
           "label" : "Get Excel from Controller",
           "position" : {
-            "x" : 1064.0,
-            "y" : -856.0
+            "x" : 1072.0,
+            "y" : -800.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1452,7 +1452,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 1688.0,
-            "y" : -808.0
+            "y" : -760.0
           },
           "properties" : {
             "excel-extract-first-row" : "0",
@@ -1590,7 +1590,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2416.0,
-            "y" : -784.0
+            "y" : -760.0
           },
           "properties" : {
             "cache-schema" : "false",
@@ -1936,7 +1936,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 976.0,
-            "y" : -808.0
+            "y" : -760.0
           },
           "properties" : { },
           "propertyDescriptors" : { },
@@ -2305,8 +2305,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3312.0,
-            "y" : -1032.0
+            "x" : 3336.0,
+            "y" : -1056.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -2443,8 +2443,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3304.0,
-            "y" : -592.0
+            "x" : 3232.0,
+            "y" : -488.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
