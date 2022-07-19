@@ -1009,8 +1009,8 @@
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3600.0,
-            "y" : -1032.0
+            "x" : 3760.0,
+            "y" : -1008.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
@@ -1575,8 +1575,8 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2968.0,
-            "y" : -1008.0
+            "x" : 3048.0,
+            "y" : -992.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
@@ -1926,7 +1926,7 @@
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 3000.0,
+            "x" : 3040.0,
             "y" : -680.0
           },
           "properties" : {
