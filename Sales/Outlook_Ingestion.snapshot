@@ -82,6 +82,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "910a8b45-2408-3378-9ae6-0f68e04cc50d",
+            "instanceIdentifier" : "86021139-1030-1182-7f25-5334cd0c38f5",
+            "name" : "ConvertExcelToCSVProcessor",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "cb45e310-0058-3510-999b-83e942a5448f",
+          "instanceIdentifier" : "01821006-98d4-1130-d538-34bf15d2062d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "attachments" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "27606bda-8bed-3fdf-8cbc-7e26341b5407",
+            "instanceIdentifier" : "01821000-98d4-1130-f2ca-d45afc84ef87",
+            "name" : "ExtractEmailAttachments",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
             "id" : "723f9391-310a-344b-aecd-654b712cde3e",
             "instanceIdentifier" : "01821003-8602-112f-2cb0-fbcbd3f324a6",
             "name" : "UpdateAttribute",
@@ -104,6 +137,39 @@
             "id" : "b2dd5e7e-b4e9-34f3-b581-4501c3bfc7a1",
             "instanceIdentifier" : "113098d4-0182-1000-a0b5-6e2740f818d2",
             "name" : "ExtractEmailAttachments",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "2c6c225f-7423-3735-b71e-e5c3b022d0b2",
+            "instanceIdentifier" : "0182100d-98d4-1130-9d50-fa0389918842",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "0fd67294-8732-3d9f-a07b-7b5a1eea5593",
+          "instanceIdentifier" : "01821010-98d4-1130-eee3-21cba31dddc1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "notNulls" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
+            "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
+            "name" : "QueryRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -247,6 +313,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
+            "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
+            "name" : "QueryRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "bff3edaa-37d9-34e3-a018-3a0ee0ba2b46",
+          "instanceIdentifier" : "01821009-98d4-1130-a3d7-0e020851eafd",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "910a8b45-2408-3378-9ae6-0f68e04cc50d",
+            "instanceIdentifier" : "86021139-1030-1182-7f25-5334cd0c38f5",
+            "name" : "ConvertExcelToCSVProcessor",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
             "id" : "c69d45e8-56c6-3e62-b434-8096e46bff15",
             "instanceIdentifier" : "0182102a-8602-112f-5334-dd9e008899f0",
             "name" : "PutFile",
@@ -313,6 +412,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "2f0501ab-55f7-3cdd-8f8d-00b1cf8b94ed",
+            "instanceIdentifier" : "0182100f-98d4-1130-374f-4948c4eb59c3",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "06dd80df-ed71-39a2-8ded-d532cef8b3a8",
+          "instanceIdentifier" : "01821011-98d4-1130-560a-ec54941bec4b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Null" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
+            "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
+            "name" : "QueryRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
             "id" : "5fb7a407-3002-39e5-ae02-5deac563851a",
             "instanceIdentifier" : "01821028-8602-112f-1a49-abedfe9d0161",
             "name" : "PutFile",
@@ -368,6 +500,39 @@
             "id" : "e8415146-3105-318f-841a-f0b7b02737c3",
             "instanceIdentifier" : "0182101f-8602-112f-f0d5-60afaa62da03",
             "name" : "QueryRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "27606bda-8bed-3fdf-8cbc-7e26341b5407",
+            "instanceIdentifier" : "01821000-98d4-1130-f2ca-d45afc84ef87",
+            "name" : "ExtractEmailAttachments",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "bc90eeb2-3420-37f5-849c-05579bdb575f",
+          "instanceIdentifier" : "01821005-98d4-1130-942b-60143dfe789a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "299bcd60-994b-3269-bf2c-658fe55fe0c3",
+            "instanceIdentifier" : "112c8d45-0182-1000-2897-cec465367ac7",
+            "name" : "ConsumeIMAP",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -841,44 +1006,12 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
-          "identifier" : "b43f4232-b739-370b-9c49-c0481b7e1117",
-          "instanceIdentifier" : "0182101c-8602-112f-7499-2fbd8ffa6671",
-          "label" : "Get now date and renaming\n",
-          "position" : {
-            "x" : 2840.0,
-            "y" : -416.0
-          },
-          "style" : {
-            "font-size" : "20px"
-          },
-          "width" : 280.0,
-          "zIndex" : 0
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "height" : 32.0,
-          "identifier" : "d6dc064e-08d0-3f49-92db-0f5f31760d40",
-          "instanceIdentifier" : "0182100c-8602-112f-b811-8a13c1a84b3a",
-          "label" : "Save Data in a folder",
-          "position" : {
-            "x" : 3552.0,
-            "y" : -424.0
-          },
-          "style" : {
-            "font-size" : "20px"
-          },
-          "width" : 200.0,
-          "zIndex" : 0
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "height" : 32.0,
           "identifier" : "f936bcad-1bcc-3ff5-acde-6c99820f301d",
           "instanceIdentifier" : "01821000-8602-112f-d6f9-3bc30d21d869",
           "label" : "Get Csv from Controller",
           "position" : {
-            "x" : 1528.0,
-            "y" : -856.0
+            "x" : 1504.0,
+            "y" : -712.0
           },
           "style" : {
             "font-size" : "20px"
@@ -893,13 +1026,93 @@
           "instanceIdentifier" : "0182100a-8602-112f-add2-8e7b13f1c77e",
           "label" : "Take only name file\n",
           "position" : {
-            "x" : 2208.0,
+            "x" : 2256.0,
             "y" : -424.0
           },
           "style" : {
             "font-size" : "20px"
           },
           "width" : 192.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 40.0,
+          "identifier" : "142e1e7d-ff54-303e-bb0f-819f84d5f2ae",
+          "instanceIdentifier" : "0182100b-98d4-1130-80fb-bb41a1b84bd7",
+          "label" : "Check  NULL and NOT NULL on Customer column\n",
+          "position" : {
+            "x" : 2832.0,
+            "y" : -1328.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 472.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
+          "identifier" : "50632dae-8ea1-37b2-8183-01216ccd0717",
+          "instanceIdentifier" : "01821014-8602-112f-318f-c700ace621b0",
+          "label" : "Save Data in a folder",
+          "position" : {
+            "x" : -352.0,
+            "y" : 680.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 200.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
+          "identifier" : "b43f4232-b739-370b-9c49-c0481b7e1117",
+          "instanceIdentifier" : "0182101c-8602-112f-7499-2fbd8ffa6671",
+          "label" : "Get now date and renaming\n",
+          "position" : {
+            "x" : 2848.0,
+            "y" : -400.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 280.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
+          "identifier" : "d6dc064e-08d0-3f49-92db-0f5f31760d40",
+          "instanceIdentifier" : "0182100c-8602-112f-b811-8a13c1a84b3a",
+          "label" : "Save Data in a folder",
+          "position" : {
+            "x" : 3560.0,
+            "y" : -408.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 200.0,
+          "zIndex" : 0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "height" : 32.0,
+          "identifier" : "e2c8f170-e2f4-3392-8cbc-a5ef29e8d475",
+          "instanceIdentifier" : "01821004-98d4-1130-5270-d81740936233",
+          "label" : "Trasform Excel in Csv",
+          "position" : {
+            "x" : 2184.0,
+            "y" : -1336.0
+          },
+          "style" : {
+            "font-size" : "20px"
+          },
+          "width" : 264.0,
           "zIndex" : 0
         }, {
           "componentType" : "LABEL",
@@ -925,8 +1138,8 @@
           "instanceIdentifier" : "01821002-8602-112f-ba33-db810e819b4c",
           "label" : "Get Information Who sent data",
           "position" : {
-            "x" : 1096.0,
-            "y" : -24.0
+            "x" : 1088.0,
+            "y" : -40.0
           },
           "style" : {
             "font-size" : "20px"
@@ -941,7 +1154,7 @@
           "instanceIdentifier" : "112f8602-0182-1000-d758-c0998e185a67",
           "label" : "Get Email from address-controller",
           "position" : {
-            "x" : 896.0,
+            "x" : 792.0,
             "y" : -656.0
           },
           "style" : {
@@ -953,17 +1166,17 @@
           "componentType" : "LABEL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "height" : 32.0,
-          "identifier" : "50632dae-8ea1-37b2-8183-01216ccd0717",
-          "instanceIdentifier" : "01821014-8602-112f-318f-c700ace621b0",
-          "label" : "Save Data in a folder",
+          "identifier" : "1851ca1e-ebea-3c25-b9bf-1c02159201c6",
+          "instanceIdentifier" : "01821002-98d4-1130-1864-48e50084e555",
+          "label" : "Get Excel from Controller",
           "position" : {
-            "x" : -352.0,
-            "y" : 680.0
+            "x" : 1536.0,
+            "y" : -1336.0
           },
           "style" : {
             "font-size" : "20px"
           },
-          "width" : 200.0,
+          "width" : 264.0,
           "zIndex" : 0
         }, {
           "componentType" : "LABEL",
@@ -990,6 +1203,236 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ "original", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-poi-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "910a8b45-2408-3378-9ae6-0f68e04cc50d",
+          "instanceIdentifier" : "86021139-1030-1182-7f25-5334cd0c38f5",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ConvertExcelToCSVProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2184.0,
+            "y" : -1280.0
+          },
+          "properties" : {
+            "excel-extract-first-row" : "0",
+            "CSV Format" : "custom",
+            "Quote Character" : "\"",
+            "Include Header Line" : "true",
+            "Value Separator" : ",",
+            "Record Separator" : "\\n",
+            "Escape Character" : "\\",
+            "extract-sheets" : "Sales_Reporting",
+            "excel-format-values" : "true",
+            "Trim Fields" : "false",
+            "Quote Mode" : "NONE",
+            "Include Trailing Delimiter" : "false"
+          },
+          "propertyDescriptors" : {
+            "excel-extract-first-row" : {
+              "displayName" : "Number of Rows to Skip",
+              "identifiesControllerService" : false,
+              "name" : "excel-extract-first-row",
+              "sensitive" : false
+            },
+            "excel-extract-column-to-skip" : {
+              "displayName" : "Columns To Skip",
+              "identifiesControllerService" : false,
+              "name" : "excel-extract-column-to-skip",
+              "sensitive" : false
+            },
+            "CSV Format" : {
+              "displayName" : "CSV Format",
+              "identifiesControllerService" : false,
+              "name" : "CSV Format",
+              "sensitive" : false
+            },
+            "Quote Character" : {
+              "displayName" : "Quote Character",
+              "identifiesControllerService" : false,
+              "name" : "Quote Character",
+              "sensitive" : false
+            },
+            "Include Header Line" : {
+              "displayName" : "Include Header Line",
+              "identifiesControllerService" : false,
+              "name" : "Include Header Line",
+              "sensitive" : false
+            },
+            "Value Separator" : {
+              "displayName" : "Value Separator",
+              "identifiesControllerService" : false,
+              "name" : "Value Separator",
+              "sensitive" : false
+            },
+            "Record Separator" : {
+              "displayName" : "Record Separator",
+              "identifiesControllerService" : false,
+              "name" : "Record Separator",
+              "sensitive" : false
+            },
+            "Escape Character" : {
+              "displayName" : "Escape Character",
+              "identifiesControllerService" : false,
+              "name" : "Escape Character",
+              "sensitive" : false
+            },
+            "extract-sheets" : {
+              "displayName" : "Sheets to Extract",
+              "identifiesControllerService" : false,
+              "name" : "extract-sheets",
+              "sensitive" : false
+            },
+            "excel-format-values" : {
+              "displayName" : "Format Cell Values",
+              "identifiesControllerService" : false,
+              "name" : "excel-format-values",
+              "sensitive" : false
+            },
+            "Null String" : {
+              "displayName" : "Null String",
+              "identifiesControllerService" : false,
+              "name" : "Null String",
+              "sensitive" : false
+            },
+            "Trim Fields" : {
+              "displayName" : "Trim Fields",
+              "identifiesControllerService" : false,
+              "name" : "Trim Fields",
+              "sensitive" : false
+            },
+            "Comment Marker" : {
+              "displayName" : "Comment Marker",
+              "identifiesControllerService" : false,
+              "name" : "Comment Marker",
+              "sensitive" : false
+            },
+            "Quote Mode" : {
+              "displayName" : "Quote Mode",
+              "identifiesControllerService" : false,
+              "name" : "Quote Mode",
+              "sensitive" : false
+            },
+            "Include Trailing Delimiter" : {
+              "displayName" : "Include Trailing Delimiter",
+              "identifiesControllerService" : false,
+              "name" : "Include Trailing Delimiter",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.poi.ConvertExcelToCSVProcessor",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "original", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
+          "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "QueryRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2840.0,
+            "y" : -1280.0
+          },
+          "properties" : {
+            "notNulls" : "SELECT * FROM FLOWFILE where Part_Number is not null",
+            "cache-schema" : "true",
+            "dbf-default-precision" : "10",
+            "Null" : "SELECT * FROM FLOWFILE where Part_Number is null",
+            "record-writer" : "a3a0d9e1-b82b-3301-bb95-b21a6dee3ac9",
+            "record-reader" : "1168ab33-02db-32d5-9762-57ec07bc6751",
+            "include-zero-record-flowfiles" : "true",
+            "dbf-default-scale" : "0"
+          },
+          "propertyDescriptors" : {
+            "notNulls" : {
+              "displayName" : "notNulls",
+              "identifiesControllerService" : false,
+              "name" : "notNulls",
+              "sensitive" : false
+            },
+            "cache-schema" : {
+              "displayName" : "Cache Schema",
+              "identifiesControllerService" : false,
+              "name" : "cache-schema",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "Null" : {
+              "displayName" : "Null",
+              "identifiesControllerService" : false,
+              "name" : "Null",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "include-zero-record-flowfiles" : {
+              "displayName" : "Include Zero Record FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "include-zero-record-flowfiles",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.QueryRecord",
+          "yieldDuration" : "1 min"
+        }, {
           "autoTerminatedRelationships" : [ "success", "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -1223,6 +1666,40 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ "original", "failure" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-email-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "27606bda-8bed-3fdf-8cbc-7e26341b5407",
+          "instanceIdentifier" : "01821000-98d4-1130-f2ca-d45afc84ef87",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ExtractEmailAttachments",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1536.0,
+            "y" : -1280.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : { },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.email.ExtractEmailAttachments",
           "yieldDuration" : "1 min"
         }, {
           "autoTerminatedRelationships" : [ ],
@@ -1713,15 +2190,15 @@
           "name" : "ExtractEmailAttachments",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1520.0,
-            "y" : -808.0
+            "x" : 1504.0,
+            "y" : -672.0
           },
           "properties" : { },
           "propertyDescriptors" : { },
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -1813,7 +2290,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "1 min",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -1920,6 +2397,75 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "2c6c225f-7423-3735-b71e-e5c3b022d0b2",
+          "instanceIdentifier" : "0182100d-98d4-1130-9d50-fa0389918842",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 3688.0,
+            "y" : -1464.0
+          },
+          "properties" : {
+            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
           "identifier" : "9d1d5a50-eca4-37b4-b2c2-3d97767e28e8",
           "instanceIdentifier" : "8602112f-1030-1182-1fa3-0b96e4a89934",
           "maxBackoffPeriod" : "10 mins",
@@ -1928,6 +2474,75 @@
           "position" : {
             "x" : 3040.0,
             "y" : -680.0
+          },
+          "properties" : {
+            "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "1 min",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 min"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "2f0501ab-55f7-3cdd-8f8d-00b1cf8b94ed",
+          "instanceIdentifier" : "0182100f-98d4-1130-374f-4948c4eb59c3",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 3688.0,
+            "y" : -1200.0
           },
           "properties" : {
             "filename" : "${filename}_${now():toNumber():format('dd_MM_yyyy_hh:mm:ss')}.csv",
