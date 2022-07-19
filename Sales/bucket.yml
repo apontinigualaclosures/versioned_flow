@@ -1,6 +1,7 @@
 flows:
-  ac647f63-31b3-4d67-b4bc-ebaea1478860: {ver: 8, file: Outlook_Ingestion.snapshot,
-    comments: Trasform Excel to Csv, author: anonymous, created: 1658220391464, flowName: Outlook
-      Ingestion, flowDesc: Ingestion dei csv che ci aspettiamo di ricervere dai controller}
+  ac647f63-31b3-4d67-b4bc-ebaea1478860: {ver: 9, file: Outlook_Ingestion.snapshot,
+    comments: 'WORK, change name column csv', author: anonymous, created: 1658223049819,
+    flowName: Outlook Ingestion, flowDesc: Ingestion dei csv che ci aspettiamo di
+      ricervere dai controller}
 layoutVer: 1
 bucketId: dd59d50d-9f64-473f-b683-0b3294ceb86d

@@ -148,39 +148,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-            "id" : "2c6c225f-7423-3735-b71e-e5c3b022d0b2",
-            "instanceIdentifier" : "0182100d-98d4-1130-9d50-fa0389918842",
-            "name" : "UpdateAttribute",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-          "identifier" : "0fd67294-8732-3d9f-a07b-7b5a1eea5593",
-          "instanceIdentifier" : "01821010-98d4-1130-eee3-21cba31dddc1",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "notNulls" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
-            "id" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
-            "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
-            "name" : "QueryRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
             "id" : "9d1d5a50-eca4-37b4-b2c2-3d97767e28e8",
             "instanceIdentifier" : "8602112f-1030-1182-1fa3-0b96e4a89934",
             "name" : "UpdateAttribute",
@@ -566,6 +533,39 @@
             "id" : "9e4a4851-ca38-38ed-8f7c-4bfcf77c0c56",
             "instanceIdentifier" : "01821036-8602-112f-728b-c5bd0bacb78c",
             "name" : "AttributesToCSV",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "2c6c225f-7423-3735-b71e-e5c3b022d0b2",
+            "instanceIdentifier" : "0182100d-98d4-1130-9d50-fa0389918842",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+          "identifier" : "4e8436dd-7354-394d-a215-9c5d559f809b",
+          "instanceIdentifier" : "01821017-98d4-1130-f8e7-e336956e6a5a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "NotNull" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "27b55c59-c645-37c1-8868-29bc9762b92d",
+            "id" : "30c45b70-c529-3947-adf0-1dde7f1b8a72",
+            "instanceIdentifier" : "01821008-98d4-1130-fbc3-259fc463a290",
+            "name" : "QueryRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -1138,8 +1138,8 @@
           "instanceIdentifier" : "01821002-8602-112f-ba33-db810e819b4c",
           "label" : "Get Information Who sent data",
           "position" : {
-            "x" : 1088.0,
-            "y" : -40.0
+            "x" : 1144.0,
+            "y" : 40.0
           },
           "style" : {
             "font-size" : "20px"
@@ -1364,22 +1364,16 @@
             "y" : -1280.0
           },
           "properties" : {
-            "notNulls" : "SELECT * FROM FLOWFILE where Part_Number is not null",
-            "cache-schema" : "true",
+            "cache-schema" : "false",
             "dbf-default-precision" : "10",
-            "Null" : "SELECT * FROM FLOWFILE where Part_Number is null",
+            "Null" : "SELECT \"Month\" as \"month\",\n\t   \"Customer\" \"customer\",\n\t   \"Part_Number\" \"part_number\",\n\t   \"Product Description\" \"product_description\",\n\t   \"Size\" \"size\",\n\t   \"Insert / Liner\" \"insert_liner\",\n\t   \"Brand\" \"brand\",\n\t   \"Group\" \"group\",\n\t   \"Incoterms\" \"incoterms\",\n\t   \"Payment Terms\" \"payment_terms\",\n\t   \"Shipment Country\" \"shipment_country\",\n\t   \"Safety /Roll On / Luxury / Other\" \"safety_rollon_etc\",\n\t   \"END USE\" \"end_use\",\n\t   \"Hyperion Account\" \"hyperion_account\",\n\t   \"Invoice Currency\" \"invoice_currency\",\n\t   \"Local Currency (Currency)\" \"local_currency\",\n\t   \"Quantity /000\" \"quantity/000\",\n\t   \"Price Inv. Curr. /1000Pcs\" \"price_invoice_currency/000\",\n\t   \"Amount Invoice Currency /000\" \"amount_invoice_currency\",\n\t   \"Amount Local Currency /000\" \"amount_local_currency\",\n\t   \"ICC BACARDI (10 digit code that begins with 811)\" \"icc_bacardi\",\n\t   \"Production Plant\" \"production_plant\",\n\t   \"Extension Line\" \"extension_line\",\n\t   \"Invoicing Plant\" \"invoicing_plant\",\n\t   \"Production Plants:\" \"production_plants\" \n\t   FROM FLOWFILE \n\t   WHERE part_number is null",
             "record-writer" : "a3a0d9e1-b82b-3301-bb95-b21a6dee3ac9",
             "record-reader" : "1168ab33-02db-32d5-9762-57ec07bc6751",
             "include-zero-record-flowfiles" : "true",
+            "NotNull" : "SELECT \"Month\" as \"month\",\n\t   \"Customer\" \"customer\",\n\t   \"Part_Number\" \"part_number\",\n\t   \"Product Description\" \"product_description\",\n\t   \"Size\" \"size\",\n\t   \"Insert / Liner\" \"insert_liner\",\n\t   \"Brand\" \"brand\",\n\t   \"Group\" \"group\",\n\t   \"Incoterms\" \"incoterms\",\n\t   \"Payment Terms\" \"payment_terms\",\n\t   \"Shipment Country\" \"shipment_country\",\n\t   \"Safety /Roll On / Luxury / Other\" \"safety_rollon_etc\",\n\t   \"END USE\" \"end_use\",\n\t   \"Hyperion Account\" \"hyperion_account\",\n\t   \"Invoice Currency\" \"invoice_currency\",\n\t   \"Local Currency (Currency)\" \"local_currency\",\n\t   \"Quantity /000\" \"quantity/000\",\n\t   \"Price Inv. Curr. /1000Pcs\" \"price_invoice_currency/000\",\n\t   \"Amount Invoice Currency /000\" \"amount_invoice_currency\",\n\t   \"Amount Local Currency /000\" \"amount_local_currency\",\n\t   \"ICC BACARDI (10 digit code that begins with 811)\" \"icc_bacardi\",\n\t   \"Production Plant\" \"production_plant\",\n\t   \"Extension Line\" \"extension_line\",\n\t   \"Invoicing Plant\" \"invoicing_plant\",\n\t   \"Production Plants:\" \"production_plants\" \n\t   FROM FLOWFILE \n\t   WHERE part_number is not null",
             "dbf-default-scale" : "0"
           },
           "propertyDescriptors" : {
-            "notNulls" : {
-              "displayName" : "notNulls",
-              "identifiesControllerService" : false,
-              "name" : "notNulls",
-              "sensitive" : false
-            },
             "cache-schema" : {
               "displayName" : "Cache Schema",
               "identifiesControllerService" : false,
@@ -1414,6 +1408,12 @@
               "displayName" : "Include Zero Record FlowFiles",
               "identifiesControllerService" : false,
               "name" : "include-zero-record-flowfiles",
+              "sensitive" : false
+            },
+            "NotNull" : {
+              "displayName" : "NotNull",
+              "identifiesControllerService" : false,
+              "name" : "NotNull",
               "sensitive" : false
             },
             "dbf-default-scale" : {
@@ -1826,8 +1826,8 @@
           "name" : "ExtractEmailHeaders",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1096.0,
-            "y" : -176.0
+            "x" : 1144.0,
+            "y" : -96.0
           },
           "properties" : {
             "STRICT_ADDRESS_PARSING" : "true",
